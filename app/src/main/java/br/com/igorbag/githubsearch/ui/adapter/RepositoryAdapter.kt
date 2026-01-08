@@ -24,9 +24,6 @@ class RepositoryAdapter(private val repositories: List<Repository>) :
 
     // Pega o conteudo da view e troca pela informacao de item de uma lista
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        //@ok -  Realizar o bind do viewHolder
-        //Exemplo de Bind
-        //  holder.preco.text = repositories[position].atributo
         val repository = repositories[position]
         holder.tvnamme.text = repository.name
 
@@ -37,16 +34,6 @@ class RepositoryAdapter(private val repositories: List<Repository>) :
         holder.ivshare.setOnClickListener {
             btnShareLister(repository)
         }
-
-        // Exemplo de click no item
-        //holder.itemView.setOnClickListener {
-        // carItemLister(repositores[position])
-        //}
-
-        // Exemplo de click no btn Share
-        //holder.favorito.setOnClickListener {
-        //    btnShareLister(repositores[position])
-        //}
     }
 
     // Pega a quantidade de repositorios da lista
@@ -54,9 +41,6 @@ class RepositoryAdapter(private val repositories: List<Repository>) :
     override fun getItemCount(): Int = repositories.size
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        //@ok - Implementar o ViewHolder para os repositorios
-        //Exemplo:
-        //val atributo: TextView
         val tvnamme: TextView
         val ivshare: ImageView
 

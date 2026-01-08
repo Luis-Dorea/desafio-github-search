@@ -2,6 +2,6 @@
     <string name="app_name">GitHubSearch</string>
     <string name="nome_usuario">Nome do usuário</string>
     <string name="confirmar">Confirmar</string>
-    <string name="response_error">Algo deu errado, por favor tente mais tarde!</string>
+    <string name="response_error">Usuário não encontrado, informe um usuário válido!</string>
     <string name="icon_share">icon share</string>
 </resources>
